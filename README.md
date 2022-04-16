@@ -14,5 +14,5 @@ New version by JiiPlus
 - Can change the name containing special characters.
 - The output file's whitespace is replaced by a hyphen.
 - Cannot change apk file name whose original app name is Korean, Chinese, etc.
-- Then the output file will lack Name or Version or ErroName.
+- Then the output file will lack Name or Version or ErrorName.
 - Open the file "RenameBuild.bat" with Notepat++ or change the extension to .txt and open it. Find line 27 and change the name you want.
