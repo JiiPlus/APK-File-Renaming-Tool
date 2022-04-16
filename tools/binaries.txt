@@ -1,0 +1,61 @@
+Binaries? WTF!?
+-----------------
+
+Okay! So I am lazy. But constructively lazy! :D I wrote two batch files
+and used a bunch of open source tools already available at hand.
+
+Feel free to source your own binaries if you do not feel safe using the
+ones bundled in here. I will give you the sources here:
+
+aapt.exe
+    Is bundled with the Android SDK toolchain. Having everything in 
+    place, find it under: android-sdk-windows\platforms\android-8\tools
+    http://dl.google.com/android/repository/android-2.2_r02-windows.zip 
+    This executable has been stripped, aka debuging info is removed.
+
+grep.exe | cut.exe | tr.exe
+    Are unix shell commands for various text manipulation.
+    http://sourceforge.net/projects/unxutils/
+
+rev.exe
+    Also a linux command for reversing input text. Source is attached.
+    Compiled with TinyCC: http://www.tinycc.org/ 
+
+
+
+Appendix
+-----------------
+
+rev.c
+-----
+
+#include <stdio.h>
+
+void reverse(const char *s)
+{
+  if(s && *s)
+  {
+    reverse(s+1);
+    printf("%c",*s);
+  }
+}
+
+int main(int argc, char **argv)
+{
+  char l[250];
+  if (gets(l)) 
+	reverse(l);
+  return 0;
+}
+
+-----
+EOF
+
+
+CIAO phsorx
+
+BYE
+
+RST
+
+
