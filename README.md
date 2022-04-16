@@ -1,6 +1,6 @@
 # Tool-Auto-Rename-Apk
 
-Upgraded version from APK Batch Rename Tool (https://forum.xda-developers.com/t/apk-batch-rename-tool-for-windows-and-linux.841312/)
+Upgraded version from APK Batch Rename Tool (https://bit.ly/3xwLkQg)
 
 -----------------------
 New version by JiiPlus
